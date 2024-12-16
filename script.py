@@ -19,27 +19,27 @@ time.sleep(10)
 
 dropdown = driver.find_element("id", "edit-field-card")
 select = Select(dropdown)
-select.select_by_visible_text("Ink Business Preferred®")
+select.select_by_visible_text("Sapphire Reserve®")
 time.sleep(3)
 
 input_field = driver.find_element("id", "edit-field-vendor-token-0-value")
-input_field.send_keys("4529")
+input_field.send_keys("5436")
 time.sleep(3)
 
 first_name_field = driver.find_element("id", "edit-field-name-first-0-value")
-first_name_field.send_keys("Alan")
+first_name_field.send_keys("Ethan")
 time.sleep(3)
 
 last_name_field = driver.find_element("id", "edit-field-name-last-0-value")
-last_name_field.send_keys("Zhang")
+last_name_field.send_keys("Lam")
 time.sleep(3)
 
 phone_field = driver.find_element("id", "edit-field-phone-0-value")
-phone_field.send_keys("7754400229")
+phone_field.send_keys("6572444146")
 time.sleep(3)
 
 email_field = driver.find_element("id", "edit-field-email-0-value")
-email_field.send_keys("alanzhang2021@gmail.com")
+email_field.send_keys("ethanmlam888@gmail.com")
 time.sleep(3)
 
 
