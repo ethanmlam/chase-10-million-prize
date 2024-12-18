@@ -21,8 +21,10 @@ jobs:
 
       # Step 3: Install dependencies (if any)
       - name: Install dependencies
-        run: 
-          pip install selenium
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U selenium
+
 
      
       # Step 4: Run the Python script
