@@ -3,12 +3,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 
-import time
+import time, random
 
-
+def random_sleep():
+    time.sleep(random.uniform(2, 5))
 
 
 chrome_options = Options()
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--mute-audio")
 # chrome_options.add_argument("--disable-gpu") 
 driver = webdriver.Chrome(options=chrome_options)
